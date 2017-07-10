@@ -5,20 +5,36 @@ import org.eurekaclinical.common.comm.clients.AuthorizingEurekaClinicalProxyClie
 
 
 /**
- * Created by akalsan on 9/21/16.
+ * A basic Eureka! Clinical REST API client for a microservice that implements
+ * the users and roles APIs.
  */
 public class Client extends AuthorizingEurekaClinicalProxyClient {
 
-    private final URI serviceUrl;
+    private final URI resourceUrl;
 
-    public Client(String inServiceUrl) {
+    /**
+     * Constructs the REST client with the provided base URL for the service's
+     * REST resources.
+     * 
+     * @param inResourceUrl the base URL for the service's rest resources. For
+     * example, if the the users resource is
+     * <code>https://mydomain.org/eurekaclinical-mymicroservice-service/api/protected/users</code>, 
+     * then this argument should be
+     * <code>https://mydomain.org/eurekaclinical-mymicroservice-service</code>.
+     */
+    public Client(String inResourceUrl) {
         super(null);
-        this.serviceUrl = URI.create(inServiceUrl);
+        this.resourceUrl = URI.create(inResourceUrl);
     }
 
+    /**
+     * Returns the base URL for the service's REST resources as a URI.
+     * 
+     * @return a URI.
+     */
     @Override
     protected URI getResourceUrl() {
-        return this.serviceUrl;
+        return this.resourceUrl;
     }
 
 }
