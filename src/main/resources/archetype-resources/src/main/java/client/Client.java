@@ -1,14 +1,14 @@
 package ${package}.client;
 
 import java.net.URI;
-import org.eurekaclinical.common.comm.clients.AuthorizingEurekaClinicalProxyClient;
+import org.eurekaclinical.common.comm.clients.AuthorizingEurekaClinicalClient;
 
 
 /**
  * A basic Eureka! Clinical REST API client for a microservice that implements
  * the users and roles APIs.
  */
-public class Client extends AuthorizingEurekaClinicalProxyClient {
+public class Client extends AuthorizingEurekaClinicalClient {
 
     private final URI resourceUrl;
 
