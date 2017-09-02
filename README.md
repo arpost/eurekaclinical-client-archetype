@@ -15,9 +15,10 @@ No final releases yet
 * [Maven 3.2.5 or greater](https://maven.apache.org)
 
 ## How to use it
-The project can be created as follows:
+You can create a new client project as follows:
 
-1) Run the following command with your own values for the properties from groupId down in the example below.
+1) Run the following command with your own values for the properties from 
+groupId down in the example below.
 ```
 mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical \
     -DarchetypeArtifactId=eurekaclinical-client-archetype \
@@ -35,22 +36,33 @@ mvn archetype:generate -DarchetypeGroupId=org.eurekaclinical \
     -DarchetypeArtifactId=eurekaclinical-client-archetype \
     -DarchetypeVersion=version
 ```
-The `groupId`, `artifactId`, `version`, and `package` properties are standard maven properties that specify the groupId,
-artifactId and version of the resulting maven project, and the package that all of the project's classes will go in.
-The initial version should be `1.0-SNAPSHOT`. The other properties are specific to Eureka! Clinical:
-* `inceptionYear`: the four-digit year in which the service's initial release is anticipated. The value that you
-specify here goes into the `inceptionYear` tag in the resulting maven project's pom.xml, and it also goes into the
+The `groupId`, `artifactId`, `version`, and `package` properties are standard 
+maven properties that specify the groupId, artifactId and version of the 
+resulting maven project, and the package that all of the project's classes will 
+go in. This archetype will append `.client` onto the package name that you 
+specify. The initial version should be `1.0-SNAPSHOT`. The other properties are 
+specific to Eureka! Clinical:
+* `inceptionYear`: the four-digit year in which the service's initial release 
+is anticipated. The value that you specify here goes into the `inceptionYear` 
+tag in the resulting maven project's pom.xml, and it also goes into the
 `etc/NOTICE.template` file.
-* `serviceArtifactId`: the artifactId of the corresponding service project. Assumes that the service project and this 
-project have the same groupId.
+* `serviceArtifactId`: the artifactId of the corresponding service project. 
+Assumes that the service project and this project have the same groupId.
  
-All Eureka! Clinical core projects should follow the naming convention in the first example above, 
-replacing `microservicename` or `MicroserviceName` with a name for your new service with corresponding capitalization.
-Projects that are deployment-specific should have their own groupId, and the artifactId should begin with an identifier
-for your deployment, e.g., `emory` instead of `eurekaclinical` for services that are specific to a deployment at
+All Eureka! Clinical core projects should follow the naming convention in the 
+first example above, replacing `microservicename` or `MicroserviceName` with a 
+name for your new client with corresponding capitalization. Projects that are 
+deployment-specific should have their own groupId, and the artifactId should 
+begin with an identifier for your deployment, for example, `emory` instead of 
+`eurekaclinical` for services that are specific to a deployment at
 Emory University. 
 
-2) A folder with the new project should be created in the current directory, which in this example would be eurekaclinical-microservicename-client. Type `cd eurekaclinical-microservicename-client`.
-3) To generate an initial NOTICE file, type `mvn notice:generate`. You will need to rerun this command whenever the project's dependencies change.
+2) After confirming that you want to go ahead and create the new client 
+project, maven will create a folder with the new project in the current 
+directory, which in this example would be 
+`eurekaclinical-microservicename-client`. It also will create a starter set of
+class files and resources. Type `cd eurekaclinical-microservicename-client`.
+3) To generate an initial NOTICE file, type `mvn notice:generate`. You will 
+need to rerun this command whenever the project's dependencies change.
 
 The resulting project will be buildable using `mvn clean install`.
