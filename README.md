@@ -4,11 +4,11 @@
 ## What does it do?
 This project is an maven archetype that helps you create a base Eureka! Clinical client project for using a Eureka! Clinical service's REST APIs.
 
-## Version 1.0 development series
+## Version history
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-client-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-client-archetype)
 
-## Version history
-No final releases yet
+### 1.0
+Initial release.
 
 ## Requirements
 * [Oracle Java JDK 8](http://www.oracle.com/technetwork/java/javase/overview/index.html)
