@@ -7,7 +7,6 @@ It provides a REST API client, `${package}.client.Client.java`, for calling the 
 ## Version 1.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/${groupId}/${artifactId}/badge.svg)](https://maven-badges.herokuapp.com/maven-central/${groupId}/${artifactId})
 
-## Version history
 No final releases yet
 
 ## Build requirements
