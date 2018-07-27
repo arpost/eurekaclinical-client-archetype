@@ -1,13 +1,15 @@
 # Eureka! Clinical Client Archetype
-[Atlanta Clinical and Translational Science Institute (ACTSI)](http://www.actsi.org), [Emory University](http://www.emory.edu), Atlanta, GA
+[Georgia Clinical and Translational Science Alliance (Georgia CTSA)](http://www.georgiactsa.org), [Emory University](http://www.emory.edu), Atlanta, GA
 
 ## What does it do?
 This project is an maven archetype that helps you create a base Eureka! Clinical client project for using a Eureka! Clinical service's REST APIs.
 
-## Version history
+## Version 2.0 development series
 Latest release: [![Latest release](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-client-archetype/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.eurekaclinical/eurekaclinical-client-archetype)
 
-### 1.0
+This version will support creating REST API clients for the new major version releases of Eureka! Clinical components.
+
+## 1.0
 Initial release.
 
 ## Requirements
